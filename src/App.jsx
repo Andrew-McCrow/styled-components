@@ -1,7 +1,7 @@
 import "./global-styles/App.css";
-import Header from "./Header.jsx";
-import Footer from "./Footer.jsx";
-import Card from "./Card.jsx";
+import Header from "./components/header/Header.jsx";
+import Footer from "./components/footer/Footer.jsx";
+import Card from "./components/Card.jsx";
 
 function App() {
   return (

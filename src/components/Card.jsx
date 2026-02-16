@@ -1,5 +1,6 @@
+// Demo of using styled-components (CSS in JS) to create a reusable Card component with styled buttons.
+
 import React from "react";
-// import "./Card.css"; // Import normal CSS
 import styled from "styled-components";
 
 const CardContainer = styled.div`
@@ -15,7 +16,7 @@ const Title = styled.h2`
 `;
 
 const Button = styled.button`
-  background-color: #007bff;
+  background-color: ${(props) => (props.primary ? "#28a745" : "#6c757d")};
   color: white;
   padding: 8px 15px;
   border: none;
@@ -31,7 +32,8 @@ function Card() {
   return (
     <CardContainer>
       <Title>Welcome!</Title>
-      <Button>Click Me</Button>
+      <Button primary>Primary</Button>
+      <Button>Secondary</Button>
     </CardContainer>
   );
 }
