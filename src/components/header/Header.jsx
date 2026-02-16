@@ -1,3 +1,5 @@
+// Demo of using CSS Modules to style a simple Header component.
+
 import React from "react";
 import styles from "./header.module.css";
 

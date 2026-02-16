@@ -1,3 +1,4 @@
+// This file demonstrates a simple Footer component styled using CSS Modules.
 import React from "react";
 import styles from "./Footer.module.css";
 
